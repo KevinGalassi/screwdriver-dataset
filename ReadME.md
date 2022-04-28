@@ -1,5 +1,29 @@
-ok : Avvitare completato con successo
 
-no_activation : Il cacciavite non è stato avviato ed è stata eseguita solamente la discesa
+# Dataset Content Organization
 
-Fail: Il cacciavite è partito ma non ha portato a nessun risultato
+
+ok : Screwdriver succefully manage to activate and conclude the screw. \
+misfire : Error in the screwdriver control. \
+fail: Screwdriver activate, but failed in the screwdriver. \
+
+
+```
+dataset
+   │
+   └───screwing
+   │   │
+   │   └───fail
+   |   |   └─── force
+   |   |   └─── position
+   │   └───misfire
+   |   |   └─── force
+   |   |   └─── position
+   │   └───ok
+   |       └─── force
+   |       └─── position
+   │   
+   └───unscrewing
+      └─── fail
+      └─── misfire
+      └─── ok
+```
